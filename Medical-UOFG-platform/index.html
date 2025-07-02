@@ -1,0 +1,1616 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#2563eb">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="msapplication-TileColor" content="#2563eb">
+    <meta name="msapplication-TileImage" content="images/EduTransform-Medical.png">
+    <meta name="application-name" content="EduTransform Medical">
+    <meta name="apple-mobile-web-app-title" content="EduTransform Medical">
+    <meta name="msapplication-config" content="browserconfig.xml">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink
+-to-fit=no">
+    <title>EduTransform Medical - Project Overview Document</title>
+    <meta name="description" content="A comprehensive overview of the EduTransform Medical project, detailing its vision, mission, features, and how it works to revolutionize medical education in resource-limited environments.">
+    <meta name="keywords" content="EduTransform Medical, medical education, student-led initiative, interactive learning, resource-limited environments, peer teaching, medical resources, educational platform, healthcare education, PWA, offline learning">
+    <meta name="author" content="AYOUB-HUSSEIN">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css
+/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/
+6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/roboto/2.138/css/roboto.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/inter-ui/3.19.3/inter.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noto-s
+ans-arabic/1.04/noto-sans-arabic.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/roboto-slab/1.0.0/roboto-slab.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/
+6.4.0/css/all.min.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Arabic:wght@300;400;500;600;700&family=Roboto+Slab:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="images/EduTransform-Medical.png" type="image/png">   
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #059669;
+            --accent-color: #dc2626;
+            --text-dark: #1f2937;
+            --text-medium: #4b5563;
+            --text-light: #6b7280;
+            --bg-light: #f8fafc;
+            --border-color: #e5e7eb;
+            --shadow-light: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+            --shadow-medium: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-large: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', 'Noto Sans Arabic', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background: #f5f5f5;
+            font-size: 14px;
+        }
+
+        .document-container {
+            max-width: 210mm;
+            margin: 20px auto;
+            background: white;
+            box-shadow: var(--shadow-large);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .page {
+            width: 100%;
+            min-height: 297mm;
+            padding: 25mm 20mm 20mm 20mm;
+            position: relative;
+            page-break-after: always;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page:not(:last-child) {
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .page-header {
+            position: absolute;
+            top: 15mm;
+            left: 20mm;
+            right: 20mm;
+            height: 5mm;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 10px;
+            color: var(--text-light);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .page-number {
+            position: absolute;
+            bottom: 15mm;
+            right: 20mm;
+            font-size: 10px;
+            color: var(--text-light);
+        }
+
+        /* Cover Page Styles */
+        .cover-page {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cover-page::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="20" cy="20" r="1" fill="white" opacity="0.1"/><circle cx="80" cy="80" r="1" fill="white" opacity="0.1"/><circle cx="40" cy="60" r="1" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            animation: float 20s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-10px) rotate(180deg); }
+        }
+
+        .cover-content {
+            z-index: 2;
+            position: relative;
+        }
+
+        .cover-title {
+            font-family: 'Roboto Slab', serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .cover-subtitle {
+            font-family: 'Noto Sans Arabic', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 400;
+            direction: rtl;
+            text-align: center;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+        }
+
+        .cover-icon {
+            font-size: 4rem;
+            margin-bottom: 2rem;
+            opacity: 0.8;
+        }
+
+        .cover-footer {
+            position: absolute;
+            bottom: 30mm;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        /* Content Page Styles */
+        .content-page {
+            background: white;
+        }
+
+        .section-title {
+            font-family: 'Roboto Slab', serif;
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .section-title i {
+            font-size: 1.5rem;
+        }
+
+        .arabic-title {
+            font-family: 'Noto Sans Arabic', sans-serif;
+            direction: rtl;
+            text-align: right;
+            color: var(--secondary-color);
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+
+        .content-section {
+            margin-bottom: 2rem;
+        }
+
+        .content-section h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .content-section h3 i {
+            color: var(--primary-color);
+            font-size: 1.1rem;
+        }
+
+        .content-section p {
+            margin-bottom: 1rem;
+            text-align: justify;
+            line-height: 1.7;
+        }
+
+        .highlight-box {
+            background: var(--bg-light);
+            border-left: 4px solid var(--primary-color);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+            box-shadow: var(--shadow-light);
+        }
+
+        .highlight-box.mission {
+            border-left-color: var(--secondary-color);
+        }
+
+        .highlight-box.challenge {
+            border-left-color: var(--accent-color);
+            background: #fef2f2;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .feature-card {
+            background: white;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: var(--shadow-light);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-medium);
+        }
+
+        .feature-card h4 {
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .feature-card i {
+            font-size: 1.1rem;
+        }
+
+        .arabic-content {
+            font-family: 'Noto Sans Arabic', sans-serif;
+            direction: rtl;
+            text-align: right;
+            font-style: italic;
+            color: var(--text-medium);
+        }
+
+        .stats-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .stat-card {
+            background: var(--primary-color);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: var(--shadow-medium);
+        }
+
+        .stat-card:nth-child(2) {
+            background: var(--secondary-color);
+        }
+
+        .stat-card:nth-child(3) {
+            background: var(--accent-color);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .phase-timeline {
+            position: relative;
+            margin: 2rem 0;
+        }
+
+        .phase-item {
+            position: relative;
+            padding-left: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .phase-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.5rem;
+            width: 12px;
+            height: 12px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+        }
+
+        .phase-item::after {
+            content: '';
+            position: absolute;
+            left: 5px;
+            top: 1.2rem;
+            width: 2px;
+            height: calc(100% + 1rem);
+            background: var(--border-color);
+        }
+
+        .phase-item:last-child::after {
+            display: none;
+        }
+
+        .phase-title {
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .challenge-list {
+            list-style: none;
+            margin: 1rem 0;
+        }
+
+        .challenge-list li {
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .challenge-list li:last-child {
+            border-bottom: none;
+        }
+
+        .challenge-icon {
+            color: var(--accent-color);
+            font-size: 1.1rem;
+            margin-top: 0.2rem;
+        }
+
+        .solution-icon {
+            color: var(--secondary-color);
+            font-size: 1.1rem;
+            margin-top: 0.2rem;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .contact-item {
+            background: var(--bg-light);
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid var(--border-color);
+        }
+
+        .contact-item i {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .contact-item h4 {
+            margin-bottom: 0.5rem;
+            color: var(--text-dark);
+        }
+
+        .contact-item a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+        .tech-stack {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .tech-item {
+            background: white;
+            border: 1px solid var(--border-color);
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: var(--shadow-light);
+        }
+
+        .tech-item i {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .tech-item span {
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        /* Print Styles */
+        @media print {
+            body {
+                background: white;
+            }
+            
+            .document-container {
+                max-width: none;
+                margin: 0;
+                box-shadow: none;
+                border-radius: 0;
+            }
+            
+            .page {
+                page-break-after: always;
+                min-height: auto;
+            }
+            
+            .page:last-child {
+                page-break-after: avoid;
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .document-container {
+                margin: 10px;
+                border-radius: 4px;
+            }
+            
+            .page {
+                padding: 15mm 10mm 10mm 10mm;
+                min-height: auto;
+            }
+            
+            .cover-title {
+                font-size: 2.5rem;
+            }
+            
+            .cover-subtitle {
+                font-size: 1.4rem;
+            }
+            
+            .section-title {
+                font-size: 1.6rem;
+            }
+            
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="document-container">
+        <!-- Cover Page -->
+        <div class="page cover-page">
+            <div class="cover-content">
+                <div class="cover-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h1 class="cover-title">EduTransform Medical</h1>
+                <p class="cover-subtitle">منصة التعليم الطبي التفاعلي في البيئات محدودة الموارد</p>
+            </div>
+        </div>
+
+        <!-- Page 1: Project Introduction -->
+        <div class="page content-page">
+            <div class="page-header">
+                <span>EduTransform Medical - Project Overview</span>
+                <span>Introduction</span>
+            </div>
+            
+            <h2 class="section-title">
+                <i class="fas fa-rocket"></i>
+                Project Introduction
+            </h2>
+            
+            <div class="content-section">
+                <p>
+                    <strong>EduTransform Medical</strong> is a groundbreaking student-led initiative designed to revolutionize medical education in resource-limited environments. Born from the vision of transforming traditional passive learning into dynamic, interactive, and community-driven educational experiences, this platform represents a paradigm shift in how medical knowledge is shared, accessed, and applied.
+                </p>
+                
+                <div class="highlight-box">
+                    <h3><i class="fas fa-university"></i> Origin Story</h3>
+                    <p>
+                        The initiative began at the <strong>University of Gezira, Sudan</strong>, where medical students faced significant challenges in accessing quality educational resources due to limited internet connectivity, insufficient learning materials, and traditional teaching methodologies that didn't engage modern learners effectively.
+                    </p>
+                </div>
+                
+                <p>
+                    What started as a local solution to address specific educational gaps has evolved into a comprehensive platform that can be scaled and adapted to serve medical education communities worldwide. The platform recognizes that the future of medical education lies not in expensive technologies or complex systems, but in empowering students to become active participants in their learning journey.
+                </p>
+                
+                <div class="content-section">
+                    <h3><i class="fas fa-users"></i> Student-Led Innovation</h3>
+                    <p>
+                        At its core, EduTransform Medical embodies the principle that students are not just consumers of educational content but can be powerful creators and curators of knowledge. By leveraging peer-to-peer learning, collaborative content creation, and innovative technology solutions, the platform creates an ecosystem where every student contributes to the collective learning experience.
+                    </p>
+                </div>
+                
+                <div class="content-section">
+                    <h3><i class="fas fa-globe"></i> Addressing Global Challenges</h3>
+                    <p>
+                        The platform specifically targets the unique challenges faced by medical education in developing regions: inconsistent internet access, limited financial resources, lack of up-to-date educational materials, and the need for locally relevant content that reflects the healthcare challenges of specific communities.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="page-number">Page 1</div>
+        </div>
+
+        <!-- Page 2: Vision and Mission -->
+        <div class="page content-page">
+            <div class="page-header">
+                <span>EduTransform Medical - Project Overview</span>
+                <span>Vision & Mission</span>
+            </div>
+            
+            <h2 class="section-title">
+                <i class="fas fa-eye"></i>
+                Vision and Mission
+            </h2>
+            
+            <div class="highlight-box mission">
+                <h3><i class="fas fa-star"></i> Our Vision</h3>
+                <p>
+                    To <strong>transform passive learning into student-led innovation</strong>, creating a global network of empowered medical learners who actively shape their educational experience and contribute to advancing healthcare knowledge in their communities.
+                </p>
+            </div>
+            
+            <div class="highlight-box">
+                <h3><i class="fas fa-bullseye"></i> Our Mission</h3>
+                <p>
+                    To <strong>build smart, interactive, community-driven learning environments</strong> that make high-quality medical education accessible, engaging, and locally relevant, regardless of geographical or economic constraints.
+                </p>
+            </div>
+            
+            <div class="content-section">
+                <h3><i class="fas fa-compass"></i> Core Principles</h3>
+                
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h4><i class="fas fa-users"></i> Student Empowerment</h4>
+                        <p>Students are creators, not just consumers of educational content</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h4><i class="fas fa-heart"></i> Community-Driven</h4>
+                        <p>Peer-to-peer learning and collaborative knowledge building</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h4><i class="fas fa-globe"></i> Accessibility</h4>
+                        <p>Quality education regardless of location or economic status</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h4><i class="fas fa-lightbulb"></i> Innovation</h4>
+                        <p>Leveraging technology to enhance, not complicate, learning</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h4><i class="fas fa-chart-line"></i> Continuous Improvement</h4>
+                        <p>Iterative development based on user feedback and needs</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h4><i class="fas fa-handshake"></i> Collaboration</h4>
+                        <p>Building bridges between students, faculty, and healthcare professionals</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="content-section">
+                <h3><i class="fas fa-target"></i> Strategic Objectives</h3>
+                <ul style="list-style: none; padding-left: 0;">
+                    <li style="margin-bottom: 0.75rem;"><i class="fas fa-check-circle" style="color: var(--secondary-color); margin-right: 0.5rem;"></i> Democratize access to high-quality medical education resources</li>
+                    <li style="margin-bottom: 0.75rem;"><i class="fas fa-check-circle" style="color: var(--secondary-color); margin-right: 0.5rem;"></i> Foster a culture of peer teaching and collaborative learning</li>
+                    <li style="margin-bottom: 0.75rem;"><i class="fas fa-check-circle" style="color: var(--secondary-color); margin-right: 0.5rem;"></i> Create sustainable educational solutions for resource-limited environments</li>
+                    <li style="margin-bottom: 0.75rem;"><i class="fas fa-check-circle" style="color: var(--secondary-color); margin-right: 0.5rem;"></i> Develop locally relevant content that addresses regional healthcare challenges</li>
+                    <li style="margin-bottom: 0.75rem;"><i class="fas fa-check-circle" style="color: var(--secondary-color); margin-right: 0.5rem;"></i> Build a scalable platform that can adapt to diverse educational contexts</li>
+                </ul>
+            </div>
+            
+            <div class="page-number">Page 2</div>
+        </div>
+
+        <!-- Page 3: Platform Features -->
+        <div class="page content-page">
+            <div class="page-header">
+                <span>EduTransform Medical - Project Overview</span>
+                <span>Platform Features</span>
+            </div>
+            
+            <h2 class="section-title">
+                <i class="fas fa-cogs"></i>
+                What the Platform Provides
+            </h2>
+            
+            <div class="content-section">
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h4><i class="fas fa-book-open"></i> Open Medical Resource Library</h4>
+                        <p>Comprehensive collection of PDFs, videos, podcasts, and interactive materials covering all medical disciplines. Content is carefully curated and regularly updated by the community.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h4><i class="fas fa-chalkboard-teacher"></i> Peer Teaching System</h4>
+                        <p class="arabic-content">مراجعات يقودها الطلاب</p>
+                        <p>Student-led review sessions, study groups, and mentorship programs that enable advanced students to guide their peers through complex topics.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h4><i class="fas fa-calculator"></i> Smart Medical Tools</h4>
+                        <p class="arabic-content">حاسبات طبية، مراجعات تفاعلية</p>
+                        <p>Interactive medical calculators, diagnostic tools, drug interaction checkers, and gamified quizzes to enhance practical learning.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h4><i class="fas fa-podcast"></i> EduCasts</h4>
+                        <p>Audio summaries and educational podcasts designed for mobile learning, perfect for commuting or when visual resources aren't available.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h4><i class="fas fa-cube"></i> 3D Anatomical Visualizations</h4>
+                        <p>Interactive 3D models and virtual anatomy labs that provide immersive learning experiences without requiring expensive physical models.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h4><i class="fas fa-chart-pie"></i> Personal Dashboard</h4>
+                        <p>Customized study plans, progress tracking, achievement badges, and personalized recommendations based on learning patterns and goals.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="content-section">
+                <h3><i class="fas fa-star"></i> Key Platform Features</h3>
+                
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 1.5rem 0;">
+                    <div>
+                        <h4 style="color: var(--primary-color); margin-bottom: 1rem;"><i class="fas fa-mobile-alt"></i> Mobile-First Design</h4>
+                        <ul style="list-style: none; padding-left: 0;">
+                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--secondary-color); margin-right: 0.5rem;"></i> Responsive across all devices</li>
+                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--secondary-color); margin-right: 0.5rem;"></i> Offline capability</li>
+                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--secondary-color); margin-right: 0.5rem;"></i> Progressive Web App (PWA)</li>
+                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--secondary-color); margin-right: 0.5rem;"></i> Low bandwidth optimization</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 style="color: var(--primary-color); margin-bottom: 1rem;"><i class="fas fa-language"></i> Multilingual Support</h4>
+                        <ul style="list-style: none; padding-left: 0;">
+                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--secondary-color); margin-right: 0.5rem;"></i> Arabic and English interface</li>
+                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--secondary-color); margin-right: 0.5rem;"></i> RTL text support</li>
+                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--secondary-color); margin-right: 0.5rem;"></i> Localized content</li>
+                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--secondary-color); margin-right: 0.5rem;"></i> Cultural sensitivity</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="page-number">Page 3</div>
+        </div>
+
+        <!-- Page 4: How Platform Works -->
+        <div class="page content-page">
+            <div class="page-header">
+                <span>EduTransform Medical - Project Overview</span>
+                <span>Platform Architecture</span>
+            </div>
+            
+            <h2 class="section-title">
+                <i class="fas fa-gears"></i>
+                How the Platform Works
+            </h2>
+            
+            <div class="content-section">
+                <div class="highlight-box">
+                    <h3><i class="fas fa-shield-alt"></i> Admin Panel</h3>
+                    <p>
+                        Secure administrative interface allowing faculty and verified student moderators to upload, organize, and curate educational content. Features include content approval workflows, user management, and analytics dashboard.
+                    </p>
+                </div>
+                
+                <div class="highlight-box">
+                    <h3><i class="fas fa-database"></i> Data Management</h3>
+                    <p>
+                        <strong>data.json</strong> feeds content directly to subject pages, ensuring fast loading times and easy content updates. This lightweight approach minimizes server requirements while maintaining flexibility.
+                    </p>
+                </div>
+                
+                <div class="highlight-box">
+                    <h3><i class="fas fa-wifi"></i> Offline Functionality</h3>
+                    <p>
+                        Fully functional offline via Progressive Web App (PWA) technology. Students can download essential materials and continue learning even without internet connectivity, with automatic synchronization when connection is restored.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="content-section">
+                <h3><i class="fas fa-sitemap"></i> System Architecture</h3>
+                
+                <div style="background: var(--bg-light); padding: 2rem; border-radius: 8px; margin: 1.5rem 0;">
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;">
+                        <div style="text-align: center;">
+                            <i class="fas fa-users" style="font-size: 2rem; color: var(--primary-color); margin-bottom: 1rem; display: block;"></i>
+                            <h4>User Interface</h4>
+                            <p style="font-size: 0.9rem; color: var(--text-medium);">Students, Faculty, Admins</p>
+                        </div>
+                        
+                        <div style="text-align: center;">
+                            <i class="fas fa-arrow-down" style="font-size: 1.5rem; color: var(--text-light); margin: 2rem 0; display: block;"></i>
+                        </div>
+                        
+                        <div style="text-align: center;">
+                            <i class="fas fa-globe" style="font-size: 2rem; color: var(--secondary-color); margin-bottom: 1rem; display: block;"></i>
+                            <h4>Frontend Layer</h4>
+                            <p style="font-size: 0.9rem; color: var(--text-medium);">HTML, CSS, JavaScript</p>
+                        </div>
+                        
+                        <div style="text-align: center;">
+                            <i class="fas fa-arrow-down" style="font-size: 1.5rem; color: var(--text-light); margin: 2rem 0; display: block;"></i>
+                        </div>
+                        
+                        <div style="text-align: center;">
+                            <i class="fas fa-server" style="font-size: 2rem; color: var(--accent-color); margin-bottom: 1rem; display: block;"></i>
+                            <h4>Hosting Platform</h4>
+                            <p style="font-size: 0.9rem; color: var(--text-medium);">Netlify CDN</p>
+                        </div>
+                        
+                        <div style="text-align: center;">
+                            <i class="fas fa-arrow-down" style="font-size: 1.5rem; color: var(--text-light); margin: 2rem 0; display: block;"></i>
+                        </div>
+                        
+                        <div style="text-align: center;">
+                            <i class="fas fa-cloud" style="font-size: 2rem; color: var(--primary-color); margin-bottom: 1rem; display: block;"></i>
+                            <h4>Data Storage</h4>
+                            <p style="font-size: 0.9rem; color: var(--text-medium);">Google Drive Integration</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="content-section">
+                <h3><i class="fas fa-workflow"></i> Content Delivery Process</h3>
+                
+                <div class="phase-timeline">
+                    <div class="phase-item">
+                        <div class="phase-title">Content Upload</div>
+                        <p>Faculty or verified students upload educational materials through the admin panel, with automatic categorization and metadata tagging.</p>
+                    </div>
+                    
+                    <div class="phase-item">
+                        <div class="phase-title">Quality Review</div>
+                        <p>Peer review process ensures content accuracy and relevance, with faculty oversight for final approval.</p>
+                    </div>
+                    
+                    <div class="phase-item">
+                        <div class="phase-title">JSON Integration</div>
+                        <p>Approved content is automatically integrated into the data.json structure, making it immediately available across the platform.</p>
+                    </div>
+                    
+                    <div class="phase-item">
+                        <div class="phase-title">Distribution</div>
+                        <p>Content is distributed via Netlify CDN for fast global access, with offline caching for PWA users.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="page-number">Page 4</div>
+        </div>
+
+        <!-- Page 5: Technical Overview -->
+        <div class="page content-page">
+            <div class="page-header">
+                <span>EduTransform Medical - Project Overview</span>
+                <span>Technical Specifications</span>
+            </div>
+            
+            <h2 class="section-title">
+                <i class="fas fa-code"></i>
+                Technical Overview
+            </h2>
+            
+            <div class="content-section">
+                <div class="tech-stack">
+                    <div class="tech-item">
+                        <i class="fab fa-html5"></i>
+                        <div><span>HTML5</span></div>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fab fa-css3-alt"></i>
+                        <div><span>CSS3</span></div>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fab fa-js-square"></i>
+                        <div><span>JavaScript ES6+</span></div>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fas fa-mobile-alt"></i>
+                        <div><span>PWA Technology</span></div>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fas fa-cloud"></i>
+                        <div><span>Netlify Hosting</span></div>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fab fa-google-drive"></i>
+                        <div><span>Google Drive</span></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="content-section">
+                <h3><i class="fas fa-laptop-code"></i> Frontend Technologies</h3>
+                <div class="highlight-box">
+                    <p>
+                        <strong>Pure HTML/CSS/JavaScript</strong> approach ensures maximum compatibility, minimal dependencies, and optimal performance on low-spec devices. This technology stack was chosen specifically to minimize barriers to entry and ensure the platform can run effectively in resource-constrained environments.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="content-section">
+                <h3><i class="fas fa-server"></i> Hosting & Infrastructure</h3>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                    <div>
+                        <h4><i class="fas fa-rocket"></i> Netlify Platform</h4>
+                        <ul style="list-style: none; padding-left: 0;">
+                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--secondary-color); margin-right: 0.5rem;"></i> Global CDN distribution</li>
+                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--secondary-color); margin-right: 0.5rem;"></i> Automatic SSL certificates</li>
+                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--secondary-color); margin-right: 0.5rem;"></i> Git-based deployment</li>
+                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--secondary-color); margin-right: 0.5rem;"></i> Form handling capabilities</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4><i class="fas fa-cloud"></i> Data Storage</h4>
+                        <ul style="list-style: none; padding-left: 0;">
+                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--secondary-color); margin-right: 0.5rem;"></i> Google Drive integration</li>
+                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--secondary-color); margin-right: 0.5rem;"></i> JSON-based content management</li>
+                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--secondary-color); margin-right: 0.5rem;"></i> Scalable file organization</li>
+                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--secondary-color); margin-right: 0.5rem;"></i> Version control system</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="content-section">
+                <h3><i class="fas fa-database"></i> Optional Enhancements</h3>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h4><i class="fab fa-google"></i> Firebase Integration</h4>
+                        <p>Real-time database for user progress tracking, discussion forums, and collaborative features when internet connectivity is reliable.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h4><i class="fas fa-table"></i> Google Sheets API</h4>
+                        <p>Dynamic content management through Google Sheets, allowing non-technical users to easily update and manage educational content.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="content-section">
+                <h3><i class="fas fa-cube"></i> 3D Visualization Technology</h3>
+                <div class="highlight-box">
+                    <p>
+                        <strong>Three.js and Sketchfab Integration:</strong> Interactive 3D anatomical models are embedded using lightweight web technologies. Models are optimized for mobile devices and can be cached for offline viewing, providing immersive learning experiences without requiring high-end hardware.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="page-number">Page 5</div>
+        </div>
+
+        <!-- Page 6: Implementation Plan -->
+        <div class="page content-page">
+            <div class="page-header">
+                <span>EduTransform Medical - Project Overview</span>
+                <span>Implementation Strategy</span>
+            </div>
+            
+            <h2 class="section-title">
+                <i class="fas fa-road"></i>
+                Phased Implementation Plan
+            </h2>
+            
+            <div class="content-section">
+                <div class="phase-timeline">
+                    <div class="phase-item">
+                        <div class="phase-title">Phase 1: Pilot Launch (Months 1-3)</div>
+                        <h4>Target: Single Batch at University of Gezira Medical School</h4>
+                        <ul style="margin-top: 0.5rem; margin-left: 1.5rem;">
+                            <li>Deploy core platform functionality</li>
+                            <li>Recruit 20-30 pilot students from one academic year</li>
+                            <li>Focus on Physiology - CardioPulmonary module</li>
+                            <li>Establish basic content upload and management workflows</li>
+                            <li>Implement feedback collection mechanisms</li>
+                            <li>Train initial student moderators and content creators</li>
+                        </ul>
+                        
+                        <div style="background: #e3f2fd; padding: 1rem; border-radius: 4px; margin-top: 1rem;">
+                            <strong>Success Metrics:</strong> 80% user engagement, 50+ pieces of uploaded content, positive feedback from faculty
+                        </div>
+                    </div>
+                    
+                    <div class="phase-item">
+                        <div class="phase-title">Phase 2: Content Expansion (Months 4-6)</div>
+                        <h4>Comprehensive Subject Coverage</h4>
+                        <ul style="margin-top: 0.5rem; margin-left: 1.5rem;">
+                            <li>Add complete Physiology curriculum content</li>
+                            <li>Integrate Anatomy and Pathology modules</li>
+                            <li>Launch peer teaching program with advanced students</li>
+                            <li>Implement 3D anatomical visualizations</li>
+                            <li>Activate community-driven content curation</li>
+                            <li>Develop mobile app version and enhance PWA features</li>
+                        </ul>
+                        
+                        <div style="background: #e8f5e8; padding: 1rem; border-radius: 4px; margin-top: 1rem;">
+                            <strong>Success Metrics:</strong> 200+ active users, 300+ learning resources, 15+ peer tutors
+                        </div>
+                    </div>
+                    
+                    <div class="phase-item">
+                        <div class="phase-title">Phase 3: University-Wide Deployment (Months 7-9)</div>
+                        <h4>Scale Across All Medical School Batches</h4>
+                        <ul style="margin-top: 0.5rem; margin-left: 1.5rem;">
+                            <li>Extend platform access to all 6 medical school batches</li>
+                            <li>Implement advanced features: discussion forums, study groups</li>
+                            <li>Launch EduCasts (educational podcast) production</li>
+                            <li>Establish faculty partnerships for content validation</li>
+                            <li>Create advanced assessment and progress tracking tools</li>
+                            <li>Develop mentorship programs connecting junior and senior students</li>
+                        </ul>
+                        
+                        <div style="background: #fff3e0; padding: 1rem; border-radius: 4px; margin-top: 1rem;">
+                            <strong>Success Metrics:</strong> 800+ active users, 10+ faculty collaborators, measurable academic improvement
+                        </div>
+                    </div>
+                    
+                    <div class="phase-item">
+                        <div class="phase-title">Phase 4: Multi-Faculty Expansion (Months 10-12)</div>
+                        <h4>Extend Beyond Medical School</h4>
+                        <ul style="margin-top: 0.5rem; margin-left: 1.5rem;">
+                            <li>Adapt platform for Pharmacy, Nursing, and other health sciences</li>
+                            <li>Establish inter-faculty collaboration programs</li>
+                            <li>Launch train-the-trainer programs for student moderators</li>
+                            <li>Implement advanced analytics and learning insights</li>
+                            <li>Create partnerships with other universities</li>
+                            <li>Develop sustainability and funding strategies</li>
+                        </ul>
+                        
+                        <div style="background: #f3e5f5; padding: 1rem; border-radius: 4px; margin-top: 1rem;">
+                            <strong>Success Metrics:</strong> 2000+ users across multiple faculties, established partnership agreements
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="content-section">
+                <h3><i class="fas fa-users-cog"></i> Team Building Strategy</h3>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h4><i class="fas fa-graduation-cap"></i> Student Volunteers</h4>
+                        <p>Recruit high-achieving students as content creators, peer tutors, and platform moderators through application process and training programs.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h4><i class="fas fa-chalkboard-teacher"></i> Faculty Advisors</h4>
+                        <p>Engage progressive faculty members as content validators, mentors, and strategic advisors to ensure academic rigor and institutional support.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h4><i class="fas fa-laptop-code"></i> Technical Team</h4>
+                        <p>Build technical capacity among computer science and engineering students to maintain and enhance platform functionality.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="page-number">Page 6</div>
+        </div>
+
+        <!-- Page 7: Challenges and Solutions -->
+        <div class="page content-page">
+            <div class="page-header">
+                <span>EduTransform Medical - Project Overview</span>
+                <span>Challenges & Solutions</span>
+            </div>
+            
+            <h2 class="section-title">
+                <i class="fas fa-exclamation-triangle"></i>
+                Real Challenges and Solutions
+            </h2>
+            
+            <div class="content-section">
+                <div class="highlight-box challenge">
+                    <h3><i class="fas fa-info-circle"></i> Implementation Reality</h3>
+                    <p>
+                        EduTransform Medical acknowledges that revolutionary educational initiatives face significant real-world challenges. Our approach is built on honest assessment of these obstacles and practical, tested solutions that have been proven effective in similar contexts.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="content-section">
+                <ul class="challenge-list">
+                    <li>
+                        <i class="fas fa-wifi challenge-icon"></i>
+                        <div>
+                            <strong>Challenge: Low Internet Connectivity</strong>
+                            <p>Unreliable internet access, slow connection speeds, and high data costs limit students' ability to access online educational resources consistently.</p>
+                            <div style="margin-top: 0.5rem; display: flex; align-items: flex-start; gap: 0.5rem;">
+                                <i class="fas fa-lightbulb solution-icon"></i>
+                                <div>
+                                    <strong>Solution:</strong> Lightweight Progressive Web App (PWA) with comprehensive offline functionality. Essential content can be downloaded during brief connectivity windows and accessed indefinitely offline. The platform uses aggressive caching and compression to minimize data usage.
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <i class="fas fa-user-slash challenge-icon"></i>
+                        <div>
+                            <strong>Challenge: Limited Student Contribution</strong>
+                            <p>Initial reluctance to contribute content due to lack of confidence, time constraints, or uncertainty about quality standards.</p>
+                            <div style="margin-top: 0.5rem; display: flex; align-items: flex-start; gap: 0.5rem;">
+                                <i class="fas fa-lightbulb solution-icon"></i>
+                                <div>
+                                    <strong>Solution:</strong> Structured volunteer training programs, gamification with achievement badges, peer recognition systems, and starting with low-barrier contributions like study notes sharing before advancing to content creation.
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <i class="fas fa-shield-alt challenge-icon"></i>
+                        <div>
+                            <strong>Challenge: Content Quality Validation</strong>
+                            <p>Ensuring medical content accuracy and reliability when relying on student-generated materials.</p>
+                            <div style="margin-top: 0.5rem; display: flex; align-items: flex-start; gap: 0.5rem;">
+                                <i class="fas fa-lightbulb solution-icon"></i>
+                                <div>
+                                    <strong>Solution:</strong> Multi-tier review process: peer review by advanced students, faculty oversight for final approval, community flagging system for errors, and clear attribution and versioning for all content to maintain accountability.
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <i class="fas fa-mobile-alt challenge-icon"></i>
+                        <div>
+                            <strong>Challenge: Limited Device Access</strong>
+                            <p>Students may only have access to basic smartphones or shared computers, limiting their ability to use complex educational platforms.</p>
+                            <div style="margin-top: 0.5rem; display: flex; align-items: flex-start; gap: 0.5rem;">
+                                <i class="fas fa-lightbulb solution-icon"></i>
+                                <div>
+                                    <strong>Solution:</strong> Mobile-first responsive design optimized for low-spec devices. Text-based content with optional multimedia, voice-based navigation options, and minimal system requirements ensure accessibility across all device types.
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <i class="fas fa-clock challenge-icon"></i>
+                        <div>
+                            <strong>Challenge: Time Management</strong>
+                            <p>Medical students' heavy academic workload limits time available for platform participation and content creation.</p>
+                            <div style="margin-top: 0.5rem; display: flex; align-items: flex-start; gap: 0.5rem;">
+                                <i class="fas fa-lightbulb solution-icon"></i>
+                                <div>
+                                    <strong>Solution:</strong> Micro-contribution model allowing 5-10 minute contributions, integration with existing study routines, and academic credit or recognition for significant contributions to incentivize participation.
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <i class="fas fa-university challenge-icon"></i>
+                        <div>
+                            <strong>Challenge: Institutional Resistance</strong>
+                            <p>Traditional academic institutions may be hesitant to embrace student-led educational initiatives or new technology platforms.</p>
+                            <div style="margin-top: 0.5rem; display: flex; align-items: flex-start; gap: 0.5rem;">
+                                <i class="fas fa-lightbulb solution-icon"></i>
+                                <div>
+                                    <strong>Solution:</strong> Gradual integration approach, demonstrating measurable improvements in student performance, faculty partnership rather than replacement, and positioning as supplement to traditional education rather than alternative.
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="page-number">Page 7</div>
+        </div>
+
+        <!-- Page 8: Target Impact -->
+        <div class="page content-page">
+            <div class="page-header">
+                <span>EduTransform Medical - Project Overview</span>
+                <span>Expected Impact</span>
+            </div>
+            
+            <h2 class="section-title">
+                <i class="fas fa-chart-line"></i>
+                Target Impact
+            </h2>
+            
+            <div class="content-section">
+                <div class="stats-container">
+                    <div class="stat-card">
+                        <div class="stat-number">85%</div>
+                        <div class="stat-label">Academic Improvement</div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-number">10,000+</div>
+                        <div class="stat-label">Students Served</div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Partner Faculties</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="content-section">
+                <h3><i class="fas fa-graduation-cap"></i> Educational Impact</h3>
+                <div class="highlight-box">
+                    <h4>Academic Performance Enhancement</h4>
+                    <p>
+                        Target <strong>85% improvement</strong> in student academic performance through enhanced engagement, peer learning, and access to comprehensive study materials. Metrics include exam scores, course completion rates, and student satisfaction surveys.
+                    </p>
+                </div>
+                
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 1.5rem 0;">
+                    <div>
+                        <h4><i class="fas fa-users"></i> Student Engagement</h4>
+                        <ul style="list-style: none; padding-left: 0;">
+                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-arrow-up" style="color: var(--secondary-color); margin-right: 0.5rem;"></i> 90% increase in study group participation</li>
+                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-arrow-up" style="color: var(--secondary-color); margin-right: 0.5rem;"></i> 75% more peer-to-peer learning sessions</li>
+                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-arrow-up" style="color: var(--secondary-color); margin-right: 0.5rem;"></i> 60% improvement in resource utilization</li>
+                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-arrow-up" style="color: var(--secondary-color); margin-right: 0.5rem;"></i> 80% satisfaction with learning experience</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4><i class="fas fa-chart-bar"></i> Learning Outcomes</h4>
+                        <ul style="list-style: none; padding-left: 0;">
+                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-star" style="color: var(--accent-color); margin-right: 0.5rem;"></i> 25% higher exam scores on average</li>
+                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-star" style="color: var(--accent-color); margin-right: 0.5rem;"></i> 40% faster concept mastery</li>
+                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-star" style="color: var(--accent-color); margin-right: 0.5rem;"></i> 50% better retention rates</li>
+                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-star" style="color: var(--accent-color); margin-right: 0.5rem;"></i> 30% increase in critical thinking skills</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="content-section">
+                <h3><i class="fas fa-globe"></i> Scale and Reach</h3>
+                
+                <div class="phase-timeline">
+                    <div class="phase-item">
+                        <div class="phase-title">Year 1: Foundation (University of Gezira)</div>
+                        <p><strong>500+ students</strong> across medical, pharmacy, and nursing programs. Establish core platform functionality and content creation workflows.</p>
+                    </div>
+                    
+                    <div class="phase-item">
+                        <div class="phase-title">Year 2: Regional Expansion</div>
+                        <p><strong>2,500+ students</strong> across 5 universities in Sudan. Develop regional partnerships and localized content strategies.</p>
+                    </div>
+                    
+                    <div class="phase-item">
+                        <div class="phase-title">Year 3: National Network</div>
+                        <p><strong>10,000+ students</strong> across 20+ institutions. Establish national coordination and quality assurance systems.</p>
+                    </div>
+                    
+                    <div class="phase-item">
+                        <div class="phase-title">Year 4-5: International Scaling</div>
+                        <p><strong>25,000+ students</strong> across 50+ faculties in multiple countries. Open-source platform available for global adaptation.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="content-section">
+                <h3><i class="fas fa-seedling"></i> Long-term Vision</h3>
+                <div class="highlight-box">
+                    <p>
+                        <strong>Scalable and Open for Other Fields:</strong> While starting with medical education, the platform architecture is designed to be easily adapted for other disciplines including Pharmacy, Engineering, Law, and other professional programs. The open-source approach ensures global accessibility and continuous improvement through community contributions.
+                    </p>
+                </div>
+                
+                <div class="feature-grid" style="margin-top: 2rem;">
+                    <div class="feature-card">
+                        <h4><i class="fas fa-pills"></i> Pharmacy Education</h4>
+                        <p>Drug interaction tools, pharmaceutical calculations, and clinical pharmacy case studies.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h4><i class="fas fa-cogs"></i> Engineering Programs</h4>
+                        <p>Technical documentation, project collaboration tools, and practical problem-solving resources.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h4><i class="fas fa-balance-scale"></i> Legal Studies</h4>
+                        <p>Case law databases, legal research tools, and collaborative case analysis platforms.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="page-number">Page 8</div>
+        </div>
+
+        <!-- Page 9: Contact Information -->
+        <div class="page content-page">
+            <div class="page-header">
+                <span>EduTransform Medical - Project Overview</span>
+                <span>Contact Information</span>
+            </div>
+            
+            <h2 class="section-title">
+                <i class="fas fa-address-book"></i>
+                Contact & Collaboration
+            </h2>
+            
+            <div class="content-section">
+                <div class="highlight-box">
+                    <h3><i class="fas fa-handshake"></i> Partnership Opportunities</h3>
+                    <p>
+                        EduTransform Medical is actively seeking partnerships with educational institutions, healthcare organizations, technology companies, and funding agencies to expand our impact and reach more students in need of quality medical education resources.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="content-section">
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <h4>Email</h4>
+                        <a href="mailto:ayoub.hassan2401@gmail.com">ayoub.hassan2401@gmail.com</a>
+                        <p style="margin-top: 0.5rem; font-size: 0.9rem; color: var(--text-medium);">Primary contact for partnerships and collaboration inquiries</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <h4>WhatsApp</h4>
+                                                <a href="https://wa.me/249115705023">+249 115 705 023</a>
+                        <p style="margin-top: 0.5rem; font-size: 0.9rem; color: var(--text-medium);">Direct messaging for quick questions and updates</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fab fa-instagram"></i>
+                        <h4>Instagram</h4>
+                        <a href="https://instagram.com/au_355">@au_355</a>
+                        <p style="margin-top: 0.5rem; font-size: 0.9rem; color: var(--text-medium);">Follow for project updates and behind-the-scenes content</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <h4>LinkedIn</h4>
+                        <a href="#">Ayoub Hassan</a>
+                        <p style="margin-top: 0.5rem; font-size: 0.9rem; color: var(--text-medium);">Professional networking and collaboration opportunities</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <h4>GitHub</h4>
+                        <a href="#">EduTransform-Medical</a>
+                        <p style="margin-top: 0.5rem; font-size: 0.9rem; color: var(--text-medium);">Open source code and technical documentation</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-university"></i>
+                        <h4>University</h4>
+                        <span>University of Gezira</span>
+                        <p style="margin-top: 0.5rem; font-size: 0.9rem; color: var(--text-medium);">Faculty of Medicine, Sudan</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="content-section">
+                <h3><i class="fas fa-users"></i> Project Team</h3>
+                
+                <div style="background: var(--bg-light); padding: 2rem; border-radius: 8px; text-align: center; margin: 2rem 0;">
+                    <div style="width: 80px; height: 80px; background: var(--primary-color); border-radius: 50%; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; color: white; font-size: 2rem;">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">Ayoub Hassan</h3>
+                    <h4 style="color: var(--text-medium); margin-bottom: 1rem;">Founder & Project Lead</h4>
+                    <p style="color: var(--text-dark); line-height: 1.6;">
+                        Medical student at University of Gezira with passion for educational technology and innovation. Experienced in web development, project management, and community building. Committed to transforming medical education through student-led initiatives and accessible technology solutions.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="content-section">
+                <h3><i class="fas fa-handshake"></i> How to Get Involved</h3>
+                
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h4><i class="fas fa-graduation-cap"></i> Students</h4>
+                        <p>Join as content creators, peer tutors, or platform testers. Help build the future of medical education in your community.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h4><i class="fas fa-chalkboard-teacher"></i> Faculty</h4>
+                        <p>Partner with us as content validators, academic advisors, or institutional liaisons to ensure quality and accreditation.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h4><i class="fas fa-code"></i> Developers</h4>
+                        <p>Contribute to our open-source platform, help with technical infrastructure, or develop new features and integrations.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h4><i class="fas fa-dollar-sign"></i> Funders</h4>
+                        <p>Support our mission through grants, sponsorships, or partnerships to help us reach more students and communities.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h4><i class="fas fa-hospital"></i> Healthcare Organizations</h4>
+                        <p>Collaborate on real-world case studies, internship programs, and professional development opportunities.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h4><i class="fas fa-globe"></i> International Partners</h4>
+                        <p>Help us adapt and scale the platform for different cultural contexts and educational systems worldwide.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="content-section">
+                <div class="highlight-box">
+                    <h3><i class="fas fa-rocket"></i> Ready to Transform Medical Education?</h3>
+                    <p>
+                        Whether you're a student looking to enhance your learning experience, an educator seeking innovative teaching tools, or an organization interested in supporting educational innovation, we invite you to join the EduTransform Medical community.
+                    </p>
+                    <p style="margin-top: 1rem; text-align: center;">
+                        <strong>Together, we can democratize access to quality medical education and empower the next generation of healthcare professionals.</strong>
+                    </p>
+                </div>
+            </div>
+            
+            <div style="margin-top: 3rem; padding-top: 2rem; border-top: 2px solid var(--border-color); text-align: center; color: var(--text-medium);">
+                <p style="margin-bottom: 0.5rem;">
+                    <strong>Document prepared by:</strong> Ayoub Hassan
+                </p>
+                <p style="margin-bottom: 0.5rem;">
+                    <strong>Date:</strong> July 2025
+                </p>
+                <p style="margin-bottom: 0.5rem;">
+                    <strong>Version:</strong> 1.0
+                </p>
+                <p style="margin-bottom: 1.5rem;">
+                    <strong>Status:</strong> Active Development
+                </p>
+                
+                <div style="background: var(--primary-color); color: white; padding: 1rem; border-radius: 8px; display: inline-block;">
+                    <i class="fas fa-graduation-cap" style="margin-right: 0.5rem;"></i>
+                    <strong>EduTransform Medical</strong>
+                    <br>
+                    <span style="font-size: 0.9rem; opacity: 0.9;">Transforming Medical Education, One Student at a Time</span>
+                </div>
+            </div>
+            
+            <div class="page-number">Page 9</div>
+        </div>
+    </div>
+
+    <script>
+        // Progressive Web App functionality
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/sw.js').then(function(registration) {
+                    console.log('ServiceWorker registration successful');
+                }, function(err) {
+                    console.log('ServiceWorker registration failed: ', err);
+                });
+            });
+        }
+
+        // Print functionality
+        function printDocument() {
+            window.print();
+        }
+
+        // Smooth scrolling for navigation
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+
+        // Dynamic page numbering (if needed for interactive features)
+        document.addEventListener('DOMContentLoaded', function() {
+            const pages = document.querySelectorAll('.page');
+            pages.forEach((page, index) => {
+                if (index > 0) { // Skip cover page
+                    const pageNumber = page.querySelector('.page-number');
+                    if (pageNumber) {
+                        pageNumber.textContent = `Page ${index}`;
+                    }
+                }
+            });
+        });
+
+        // Add print button functionality
+        function addPrintButton() {
+            const printButton = document.createElement('button');
+            printButton.innerHTML = '<i class="fas fa-print"></i> Print Document';
+            printButton.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: var(--primary-color);
+                color: white;
+                border: none;
+                padding: 12px 20px;
+                border-radius: 6px;
+                cursor: pointer;
+                font-family: inherit;
+                font-size: 14px;
+                font-weight: 500;
+                box-shadow: var(--shadow-medium);
+                z-index: 1000;
+                transition: all 0.2s ease;
+            `;
+            
+            printButton.onmouseover = function() {
+                this.style.background = '#1d4ed8';
+                this.style.transform = 'translateY(-2px)';
+            };
+            
+            printButton.onmouseout = function() {
+                this.style.background = 'var(--primary-color)';
+                this.style.transform = 'translateY(0)';
+            };
+            
+            printButton.onclick = function() {
+                window.print();
+            };
+            
+            document.body.appendChild(printButton);
+        }
+
+        // Add print button on load
+        document.addEventListener('DOMContentLoaded', addPrintButton);
+
+        // Responsive table of contents (for larger screens)
+        function createTableOfContents() {
+            const sections = [
+                'Project Introduction',
+                'Vision and Mission', 
+                'Platform Features',
+                'Platform Architecture',
+                'Technical Specifications',
+                'Implementation Strategy',
+                'Challenges & Solutions',
+                'Expected Impact',
+                'Contact & Collaboration'
+            ];
+
+            const toc = document.createElement('div');
+            toc.style.cssText = `
+                position: fixed;
+                left: 20px;
+                top: 50%;
+                transform: translateY(-50%);
+                background: white;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: var(--shadow-large);
+                max-width: 200px;
+                z-index: 999;
+                display: none;
+            `;
+
+            const tocTitle = document.createElement('h4');
+            tocTitle.textContent = 'Contents';
+            tocTitle.style.cssText = `
+                margin: 0 0 15px 0;
+                color: var(--primary-color);
+                font-size: 16px;
+            `;
+            toc.appendChild(tocTitle);
+
+            sections.forEach((section, index) => {
+                const link = document.createElement('a');
+                link.textContent = section;
+                link.href = '#';
+                link.style.cssText = `
+                    display: block;
+                    margin-bottom: 8px;
+                    color: var(--text-medium);
+                    text-decoration: none;
+                    font-size: 12px;
+                    line-height: 1.4;
+                `;
+                link.onclick = function(e) {
+                    e.preventDefault();
+                    const pages = document.querySelectorAll('.page');
+                    if (pages[index + 1]) {
+                        pages[index + 1].scrollIntoView({ behavior: 'smooth' });
+                    }
+                };
+                toc.appendChild(link);
+            });
+
+            // Show TOC on larger screens
+            if (window.innerWidth > 1200) {
+                toc.style.display = 'block';
+            }
+
+            document.body.appendChild(toc);
+        }
+
+        // Add table of contents for desktop
+        if (window.innerWidth > 1200) {
+            document.addEventListener('DOMContentLoaded', createTableOfContents);
+        }
+
+        // Add fade-in animation for pages
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => {
+                page.style.cssText += `
+                    opacity: 0;
+                    transform: translateY(20px);
+                    transition: opacity 0.6s ease, transform 0.6s ease;
+                `;
+                observer.observe(page);
+            });
+        });
+    </script>
+</body>
+</html>

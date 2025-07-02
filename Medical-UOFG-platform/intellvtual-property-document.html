@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>وثيقة ملكية فكرية - EduTransform Medical</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300;400;500;600;700&family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Kufi Arabic', 'Cairo', Arial, sans-serif;
+            line-height: 1.8;
+            color: #2c3e50;
+            background: #f8f9fa;
+            direction: rtl;
+            text-align: right;
+        }
+
+        .document-container {
+            max-width: 210mm;
+            margin: 20px auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 25mm;
+            margin: 0 auto;
+            background: white;
+            position: relative;
+            page-break-after: always;
+        }
+
+        .page:last-child {
+            page-break-after: avoid;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 20px;
+        }
+
+        .main-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: #7f8c8d;
+            font-weight: 400;
+        }
+
+        /* Content sections */
+        .content-section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 22px;
+            font-weight: 600;
+            color: #2980b9;
+            margin-bottom: 15px;
+            border-right: 4px solid #3498db;
+            padding-right: 15px;
+        }
+
+        .content-text {
+            font-size: 16px;
+            line-height: 2;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #e8f4fd 0%, #f1f8ff 100%);
+            border: 1px solid #3498db;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 25px 0;
+            box-shadow: 0 2px 10px rgba(52, 152, 219, 0.1);
+        }
+
+        .intellectual-property-list {
+            background: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            border: 1px solid #ecf0f1;
+        }
+
+        .ip-item {
+            padding: 10px 0;
+            border-bottom: 1px dotted #bdc3c7;
+            font-size: 15px;
+        }
+
+        .ip-item:last-child {
+            border-bottom: none;
+        }
+
+        .ip-item::before {
+            content: "●";
+            color: #3498db;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        /* Contact Information */
+        .contact-info {
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .contact-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .contact-details {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-size: 14px;
+        }
+
+        .contact-icon {
+            font-size: 16px;
+        }
+
+        /* Quote */
+        .quote-section {
+            background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin: 30px 0;
+            text-align: center;
+            font-style: italic;
+            position: relative;
+        }
+
+        .quote-section::before {
+            content: '"';
+            font-size: 60px;
+            position: absolute;
+            top: -10px;
+            right: 20px;
+            opacity: 0.3;
+        }
+
+        .quote-section::after {
+            content: '"';
+            font-size: 60px;
+            position: absolute;
+            bottom: -10px;
+            left: 20px;
+            opacity: 0.3;
+        }
+
+        .quote-text {
+            font-size: 18px;
+            line-height: 1.6;
+            font-weight: 500;
+        }
+
+        /* Date information */
+        .date-info {
+            background: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-right: 4px solid #e74c3c;
+        }
+
+        .date-item {
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+
+        .date-item:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Footer */
+        .footer {
+            position: absolute;
+            bottom: 20mm;
+            left: 25mm;
+            right: 25mm;
+            text-align: center;
+            border-top: 1px solid #bdc3c7;
+            padding-top: 15px;
+            font-size: 12px;
+            color: #7f8c8d;
+        }
+
+        .page-number {
+            font-weight: 600;
+        }
+
+        .copyright {
+            margin-top: 5px;
+            font-style: italic;
+        }
+
+        /* Warning box */
+        .warning-box {
+            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        /* Print styles */
+        @media print {
+            body {
+                background: white;
+            }
+            
+            .document-container {
+                box-shadow: none;
+                border-radius: 0;
+                margin: 0;
+                max-width: none;
+            }
+
+            .page {
+                margin: 0;
+                box-shadow: none;
+                page-break-inside: avoid;
+            }
+
+            .footer {
+                position: fixed;
+                bottom: 15mm;
+            }
+        }
+
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        /* Responsive design */
+        @media screen and (max-width: 768px) {
+            .document-container {
+                margin: 10px;
+                border-radius: 0;
+            }
+            
+            .page {
+                width: 100%;
+                padding: 20px;
+                min-height: auto;
+            }
+            
+            .main-title {
+                font-size: 24px;
+            }
+            
+            .section-title {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="document-container">
+        <div class="page">
+            <!-- Header -->
+            <div class="header">
+                <h1 class="main-title">وثيقة ملكية فكرية</h1>
+                <p class="subtitle">منصة EduTransform Medical</p>
+            </div>
+
+            <!-- Introduction -->
+            <div class="content-section">
+                <h2 class="section-title">نبذة عن المشروع</h2>
+                <p class="content-text">
+                    تم تطوير وتصميم منصة EduTransform Medical من قِبل الطالب أيوب حسن – كلية الطب – جامعة الجزيرة، 
+                    كمبادرة طلابية تهدف إلى تحسين تجربة التعليم الطبي الجامعي في البيئات محدودة الموارد، 
+                    من خلال أدوات رقمية ذكية وتفاعلية.
+                </p>
+            </div>
+
+            <!-- Intellectual Property Elements -->
+            <div class="content-section">
+                <h2 class="section-title">عناصر الملكية الفكرية</h2>
+                <div class="highlight-box">
+                    <p style="font-weight: 600; margin-bottom: 15px; color: #2c3e50;">
+                        جميع العناصر الفكرية المتعلقة بالمنصة، بما في ذلك:
+                    </p>
+                    <div class="intellectual-property-list">
+                        <div class="ip-item">فكرة المشروع وهيكله التقني والتعليمي</div>
+                        <div class="ip-item">التصميم العام للمنصة، وترتيب المحتوى</div>
+                        <div class="ip-item">لوحة الإدارة وربطها التلقائي مع المحتوى</div>
+                        <div class="ip-item">نظام التوصية والمراجعة، والتعليم التفاعلي</div>
+                        <div class="ip-item">الهوية البصرية، الاسم، الشعار، المحتوى المكتوب</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright Notice -->
+            <div class="warning-box">
+                <p style="font-size: 16px; font-weight: 600;">
+                    هي ملكية فكرية كاملة للمطور أيوب حسن، ولا يجوز نسخها أو إعادة استخدامها أو إعادة إطلاق نسخة مشابهة لها 
+                    جزئيًا أو كليًا، سواء لأغراض تعليمية أو تجارية أو تقنية، دون إذن كتابي مسبق من صاحب المنصة.
+                </p>
+            </div>
+
+            <!-- Date Information -->
+            <div class="content-section">
+                <h2 class="section-title">معلومات التاريخ</h2>
+                <div class="date-info">
+                    <div class="date-item">تاريخ الإنشاء الرسمي للمنصة: 22 يونيو 2025</div>
+                    <div class="date-item">آخر تحديث: <span id="currentDate"></span></div>
+                </div>
+            </div>
+
+            <!-- Developer Information -->
+            <div class="content-section">
+                <div class="contact-info">
+                    <h3 class="contact-title">المطور والمالك</h3>
+                    <p style="font-size: 18px; font-weight: 600; margin-bottom: 10px;">أيوب حسن</p>
+                    <p style="margin-bottom: 15px;">طالب – كلية الطب – جامعة الجزيرة</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <span>ayoub.hassan2401@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📱</span>
+                            <span>واتساب: +249115705023</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📷</span>
+                            <span>إنستغرام: au_355</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quote -->
+            <div class="quote-section">
+                <p class="quote-text">
+                    EduTransform Medical هي ملكية فكرية خالصة، تم تطويرها من أجل خدمة الطلاب... 
+                    وستظل دائمًا مشروعًا نابعًا من قلب القاعات الدراسية.
+                </p>
+            </div>
+
+            <!-- Footer -->
+            <div class="footer">
+                <div class="page-number">صفحة 1 من 1</div>
+                <div class="copyright">© 2025 EduTransform Medical - جميع الحقوق محفوظة</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Set current date
+        function setCurrentDate() {
+            const now = new Date();
+            const options = { 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric',
+                calendar: 'islamic'
+            };
+            
+            // Arabic date formatting
+            const arabicDate = now.toLocaleDateString('ar-SA', options);
+            document.getElementById('currentDate').textContent = arabicDate;
+        }
+
+        // Print functionality
+        function printDocument() {
+            window.print();
+        }
+
+        // Add print button (optional)
+        function addPrintButton() {
+            const printBtn = document.createElement('button');
+            printBtn.innerHTML = '🖨️ طباعة الوثيقة';
+            printBtn.style.cssText = `
+                position: fixed;
+                top: 20px;
+                left: 20px;
+                background: #3498db;
+                color: white;
+                border: none;
+                padding: 12px 20px;
+                border-radius: 6px;
+                cursor: pointer;
+                font-family: 'Noto Kufi Arabic', Arial, sans-serif;
+                font-size: 14px;
+                z-index: 1000;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+                transition: all 0.3s ease;
+            `;
+            
+            printBtn.addEventListener('click', printDocument);
+            printBtn.addEventListener('mouseover', function() {
+                this.style.background = '#2980b9';
+                this.style.transform = 'translateY(-2px)';
+            });
+            printBtn.addEventListener('mouseout', function() {
+                this.style.background = '#3498db';
+                this.style.transform = 'translateY(0)';
+            });
+            
+            document.body.appendChild(printBtn);
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            setCurrentDate();
+            addPrintButton();
+        });
+
+        // Hide print button when printing
+        window.addEventListener('beforeprint', function() {
+            const printBtn = document.querySelector('button');
+            if (printBtn) printBtn.style.display = 'none';
+        });
+
+        window.addEventListener('afterprint', function() {
+            const printBtn = document.querySelector('button');
+            if (printBtn) printBtn.style.display = 'block';
+        });
+    </script>
+</body>
+</html>
